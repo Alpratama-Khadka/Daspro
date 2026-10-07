@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class tugas2_03 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int biayaPerLembar = 500;
+        int biayaJilid = 5000;
+
+        System.out.println("Masukkan jumlah lembar dokumen (x)");
+        int x = sc.nextInt();
+
+        int totalBiaya = (x * biayaPerLembar) + biayaJilid;
+
+        System.out.println("Total biaya yang harus dibayar: Rp" + totalBiaya);
+
+        sc.close();
+    }
+}
